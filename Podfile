@@ -7,4 +7,15 @@ target 'Automation' do
 
 pod 'SwiftLint'
   # Pods for Automation
+
+  target 'AutomationTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'AutomationUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
 end
