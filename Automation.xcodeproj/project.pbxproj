@@ -552,6 +552,7 @@
 			baseConfigurationReference = 680CBCFECD1B975E74CC4448 /* Pods-Automation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = M82244S89Y;
 				INFOPLIST_FILE = Automation/Info.plist;
@@ -561,7 +562,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.samesystemsapp.sametime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Samesystem-TimeReq-Dev";
+				PROVISIONING_PROFILE_SPECIFIER = "Samesystem-timereg-dist";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -572,6 +573,7 @@
 			baseConfigurationReference = 920478309AD3F1781507799B /* Pods-Automation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = M82244S89Y;
 				INFOPLIST_FILE = Automation/Info.plist;
@@ -581,7 +583,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.samesystemsapp.sametime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "Samesystem-TimeReq-Dev";
+				PROVISIONING_PROFILE_SPECIFIER = "Samesystem-timereg-dist";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
