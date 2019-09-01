@@ -6,6 +6,7 @@ target 'Automation' do
   use_frameworks!
 
 pod 'SwiftLint'
+pod 'AppCenter'
   # Pods for Automation
 
   target 'AutomationTests' do

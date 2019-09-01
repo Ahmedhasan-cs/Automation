@@ -7,6 +7,9 @@
 // commit
 
 import UIKit
+import AppCenter
+import AppCenterAnalytics
+import AppCenterCrashes
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,7 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.hockeyAppConfig()
         return true
+    }
+
+    func hockeyAppConfig() {
+        MSAppCenter.start("5d28bb31-cbb5-44c0-b2b9-49e68f7e9cd5", withServices: [
+            MSAnalytics.self,
+            MSCrashes.self
+        ])
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
